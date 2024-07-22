@@ -1,3 +1,12 @@
-function skillsMemeber() {
-  console.log("Skills: 1. Javascript 2. React 3. Node 4. Express");
+function skillsMemeber(){
+    return {
+        restrict: 'E',
+        templateUrl: 'app/views/skills-member.html',
+        controller: 'SkillsMemberController',
+        controllerAs: 'skillsMemberCtrl',
+        bindToController: true,
+        scope: {
+            member: '='
+        }
+    };
 }
